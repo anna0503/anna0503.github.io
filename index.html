@@ -26,4 +26,11 @@
   <h1>hi</h1>
   <div id="line"></div>
   <a class="btn btn-default" href="#" role="button">Link</a>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 </html>
