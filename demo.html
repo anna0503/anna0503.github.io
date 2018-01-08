@@ -15,6 +15,9 @@
 	  <!-- scroll plugin -->
 	  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
+	  <!-- font -->
+	  <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
 	  <!-- 상세css -->
 	  <style media="screen">
 	  .text_img {
@@ -293,6 +296,16 @@
 				color: black;
 				opacity: 1;
 			}
+			@media (max-width:768px){
+				.blank_100{
+					height: 100px;
+				}
+			}
+			.column_1.bg{
+				background-image: url(./images/hims.png);
+				background-size: cover;
+			}
+
 /* *{border:1px solid black} */
 	  </style>
 
@@ -341,7 +354,7 @@
   		}
 
   		pre {
-  			font-family: monospace, monospace;
+  			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			font-size: 1em;
   		}
 
@@ -369,7 +382,7 @@
   		code,
   		kbd,
   		samp {
-  			font-family: monospace, monospace;
+  			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			font-size: 1em;
   		}
 
@@ -425,7 +438,7 @@
   		optgroup,
   		select,
   		textarea {
-  			font-family: sans-serif;
+  			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			font-size: 100%;
   			line-height: 1.15;
   			margin: 0;
@@ -532,23 +545,11 @@
   			display: none;
   		}
 
-  		@font-face {
-  			font-family: "Avenir LT W01_45 Book1475508";
-  			src: url("fonts/1475508/710789a0-1557-48a1-8cec-03d52d663d74-.eot#iefix");
-  			src: url("fonts/1475508/710789a0-1557-48a1-8cec-03d52d663d74-.eot#iefix") format("eot"), url("fonts/1475508/065a6b14-b2cc-446e-9428-271c570df0d9.woff2") format("woff2"), url("fonts/1475508/65d75eb0-2601-4da5-a9a4-9ee67a470a59.woff") format("woff"), url("fonts/1475508/c70e90bc-3c94-41dc-bf14-caa727c76301.ttf") format("truetype");
-  		}
+  		/* @font-face {
+  			font-family: "Spoqa Han Sans","Sans-serif";
+  			src: url();
 
-  		@font-face {
-  			font-family: "Avenir LT W01_65 Medium1475532";
-  			src: url("fonts/1475532/e0542193-b2e6-4273-bc45-39d4dfd3c15b-.eot#iefix");
-  			src: url("fonts/1475532/e0542193-b2e6-4273-bc45-39d4dfd3c15b-.eot#iefix") format("eot"), url("fonts/1475532/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("fonts/1475532/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("fonts/1475532/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype");
-  		}
-
-  		@font-face {
-  			font-family: "Avenir LT W01_85 Heavy1475544";
-  			src: url("fonts/1475544/6af9989e-235b-4c75-8c08-a83bdaef3f66-.eot#iefix");
-  			src: url("fonts/1475544/6af9989e-235b-4c75-8c08-a83bdaef3f66-.eot#iefix") format("eot"), url("fonts/1475544/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"), url("fonts/1475544/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff"), url("fonts/1475544/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf") format("truetype");
-  		}
+  		} */
 
   		html {
   			font-display: block;
@@ -561,7 +562,7 @@
 
   		body {
   			line-height: 1.8em;
-  			font-family: "Avenir LT W01_45 Book1475508", Helvetica, "Apple Color Emoji", sans-serif;
+  			font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
   			color: rgba(0, 0, 0, 0.64);
   		}
 
@@ -585,7 +586,7 @@
 
   		b,
   		strong {
-  			font-family: "Avenir LT W01_65 Medium1475532", Helvetica, "Apple Color Emoji", sans-serif;
+  			font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
   			font-weight: normal;
   		}
 
@@ -609,7 +610,7 @@
   		h5,
   		h6,
   		blockquote {
-  			font-family: "Miller Disp Lt", Georgia, "Apple Color Emoji", serif;
+  			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			color: rgba(0, 0, 0, 0.72);
   		}
 
@@ -625,30 +626,31 @@
   		h5 strong,
   		h6 strong,
   		blockquote strong {
-  			font-family: "Miller Disp Lt", Georgia, "Apple Color Emoji", serif;
+  			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			font-weight: bold;
   		}
 
   		h1 {
   			line-height: 1.16em;
   			margin-bottom: 0.46154em;
+			font-weight: 700;
   		}
 
   		@media (min-width:1025px) {
   			h1 {
-  				font-size: calc(7.142857142857142vw + 1.14px);
+  				font-size: calc(5.142857142857142vw - 10px);
   			}
   		}
 
   		@media (max-width:1440px) {
   			h1 {
-  				font-size: calc(7.153502235469449vw + 1.06px);
+  				font-size: calc(5.153502235469449vw - 10px);
   			}
   		}
 
   		@media (max-width:768px) {
   			h1 {
-  				font-size: calc(3.9312039312039313vw + 25.85px);
+  				font-size: calc(3.9312039312039313vw);
   			}
   		}
 
@@ -698,7 +700,7 @@
   		}
 
   		h4 {
-  			font-family: "Avenir LT W01_85 Heavy1475544", Helvetica, "Apple Color Emoji", sans-serif;
+  			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			line-height: 1.25em;
   			padding-top: 0.666667em;
   			padding-bottom: 0.75em;
@@ -835,7 +837,7 @@
   			height: 24px;
   			vertical-align: top;
   			margin-right: 6px;
-  			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPHBvbHlnb24gZmlsbD0icmdiYSgwLCAwLCAwLCAwLjQzKSIgcG9pbnRzPSI4Ljk5OTk5MzkgMTYuMiA1Ljc5OTk5MzkgMTMgNC4zOTk5OTM5IDE0LjQgOC45OTk5OTM5IDE5IDE4Ljk5OTk5MzkgOSAxNy41OTk5OTM5IDcuNiI+PC9wb2x5Z29uPgo8L3N2Zz4K);
+  			/* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPHBvbHlnb24gZmlsbD0icmdiYSgwLCAwLCAwLCAwLjQzKSIgcG9pbnRzPSI4Ljk5OTk5MzkgMTYuMiA1Ljc5OTk5MzkgMTMgNC4zOTk5OTM5IDE0LjQgOC45OTk5OTM5IDE5IDE4Ljk5OTk5MzkgOSAxNy41OTk5OTM5IDcuNiI+PC9wb2x5Z29uPgo8L3N2Zz4K); */
   			background-size: contain;
   			background-repeat: no-repeat;
   		}
@@ -868,6 +870,7 @@
   		.loader.is-loaded {
   			opacity: 0;
   		}
+		* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
   	</style>
 
 
@@ -875,7 +878,7 @@
 	<body>
 		<nav class="menu">
 			<ul>
-				<li>메뉴1</li>
+				<li><a href="#">메뉴1</a></li>
 				<li>메뉴2</li>
 				<li>메뉴3</li>
 				<li>메뉴4</li>
@@ -883,12 +886,20 @@
 			</ul>
 		</nav>
 		<div class="main">
-			<section class="column_1">
+			<div class="blank_100">
+
+			</div>
+			<section class="column_1 bg">
 				<div class="text_only">
 					<div>
 						<div class="text_only_inner">
-							<h1>h1입니다.</h1>
+							<img src="./images/hims.png" alt="" style="width:100px;height:150px;" class="">
+							<img src="./images/hims.png" alt="" style="width:100px;height:150px;">
+							<img src="./images/hims.png" alt="" style="width:100px;height:150px;">
+							<img src="./images/hims.png" alt="" style="width:100px;height:150px;">
+							<h1>뇌졸중재활 어떻게 해야 할까요?</h1>
 							<h3>text만 있는 섹션입니다.Over the past decade, we have helped create $4 billion in startup value and have led numerous Fortune 500 businesses through today's evolving landscape.</h3>
+							<button type="button" name="button">button</button>
 
 						</div>
 					</div>
@@ -913,6 +924,7 @@
 
 				<div class="text_box">
 					<div class="text_con">
+
 						<h4>h4입니다.</h4>
 						<h2>h2입니다.</h2>
 						<p>Working with an all-star team, we crafted a web presence and art direction to bring Hims to market; a men’s wellness brand aimed at normalizing treatment for hair-loss, erectile dysfunction and adult acne. Our goal was to provide detailed information and solutions in an approachable, relatable and personal fashion. Hims features natural skin-tone colors, a diverse, youthful cast, conversational copy (and emojis), and a warm, playful site design.</p>
@@ -920,10 +932,11 @@
 				</div>
 				<div class="img_left">
 				<div class="img_con">
-						<img src="./images/hims.png" alt="">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4074319397682!2d-122.17190768484961!3d37.427478739837674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford+University!5e0!3m2!1sen!2skr!4v1515425363407" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				</div>
 			</section>
+
 		</div>
 
 
