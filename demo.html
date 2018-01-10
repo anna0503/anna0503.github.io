@@ -18,6 +18,10 @@
 	  <!-- font -->
 	  <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 
+	<!-- scrollmagic -->
+	<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
+
 	  <!-- 상세css -->
 	  <style media="screen">
 	  .text_img {
@@ -951,6 +955,17 @@
 		window.sr = ScrollReveal();
 		sr.reveal('.box1');
 		sr.reveal('.box2');
+
+		// init controller
+		var controller = new ScrollMagic.Controller();
+
+		// create a scene
+		new ScrollMagic.Scene({
+		        duration: 100,    // the scene should last for a scroll distance of 100px
+		        offset: 50        // start this scene after scrolling for 50px
+		    })
+		    .setPin("#column_1") // pins the element for the the scene's duration
+		    .addTo(controller); // assign the scene to the controller
 		</script>
 	</body>
 </html>
