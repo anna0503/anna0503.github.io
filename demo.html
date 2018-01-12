@@ -27,299 +27,7 @@
 	<script src="ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
 
 
-	  <!-- 상세css -->
-	  <style media="screen">
-	  .text_img {
-		  position: relative;
-		  margin: 0 32px 32px;
-		  padding-top: 60px;
-	  }
 
-	  .text_img:before,
-	  .text_img:after {
-		  content: ' ';
-		  display: table;
-	  }
-
-	  @media (min-width:481px) {
-		  .text_img {
-			  margin-left: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
-			  margin-right: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
-		  }
-	  }
-
-	  @media (min-width:769px) {
-		  .text_img {
-			  margin: 0;
-			  min-height: 100vh;
-			  display: -webkit-box;
-			  display: -webkit-flex;
-			  display: -ms-flexbox;
-			  display: flex;
-			  -webkit-align-items: center;
-			  -webkit-box-align: center;
-			  -ms-flex-align: center;
-			  align-items: center;
-			  -webkit-flex-direction: row;
-			  -ms-flex-direction: row;
-			  flex-direction: row;
-		  }
-	  }
-
-	  		.img_text {
-	  			position: relative;
-	  			margin: 0 32px 32px;
-	  			padding-top: 60px;
-	  		}
-
-	  		.img_text:before,
-	  		.img_text:after {
-	  			content: ' ';
-	  			display: table;
-	  		}
-
-	  		@media (min-width:481px) {
-	  			.img_text {
-	  				margin-left: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
-	  				margin-right: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
-	  			}
-	  		}
-
-	  		@media (min-width:769px) {
-	  			.img_text {
-	  				margin: 0;
-	  				min-height: 100vh;
-	  				display: -webkit-box;
-	  				display: -webkit-flex;
-	  				display: -ms-flexbox;
-	  				display: flex;
-	  				-webkit-align-items: center;
-	  				-webkit-box-align: center;
-	  				-ms-flex-align: center;
-	  				align-items: center;
-	  				-webkit-flex-direction: row-reverse;
-	  				-ms-flex-direction: row-reverse;
-	  				flex-direction: row-reverse;
-	  			}
-	  		}
-
-			/* sc-component-id: sc-htpNat */
-
-			@media (min-width:769px) {
-				.text_box {
-					display: -webkit-box;
-					display: -webkit-flex;
-					display: -ms-flexbox;
-					display: flex;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
-					-webkit-box-pack: center;
-					-webkit-justify-content: center;
-					-ms-flex-pack: center;
-					justify-content: center;
-					width: 50%;
-					min-height: 600px;
-					padding: 120px 0;
-					box-sizing: border-box;
-				}
-			}
-
-			/* sc-component-id: sc-bxivhb */
-
-			.text_con>* {
-				opacity:0;
-				-webkit-transform:translateY(10px);
-				-ms-transform:translateY(10px);
-				transform:translateY(10px);
-				will-change:opacity;
-				-webkit-transition:opacity 500ms cubic-bezier(0.67,0.00,0.67,1.00),-webkit-transform 500ms cubic-bezier(0.33,0.00,0.00,1.00);
-				-webkit-transition:opacity 500ms cubic-bezier(0.67,0.00,0.67,1.00),transform 500ms cubic-bezier(0.33,0.00,0.00,1.00);
-				transition:opacity 500ms cubic-bezier(0.67,0.00,0.67,1.00),transform 500ms cubic-bezier(0.33,0.00,0.00,1.00);}
-			.text_con > *{
-				opacity:1;
-				-webkit-transform:translateY(0);
-				-ms-transform:translateY(0);
-				transform:translateY(0);
-				-webkit-transition-duration:500ms;
-				transition-duration:500ms;
-			}
-			.text_con > *:nth-child(n + 2){
-				-webkit-transition-delay:250ms;
-				transition-delay:250ms;
-				}
-			.text_con > h1:nth-child(-n + 2),.text_con > h2:nth-child(-n + 2),.text_con > h4:nth-child(-n + 2){-webkit-transition-delay:0ms;transition-delay:0ms;}
-			@media (min-width:769px){.text_con{width:calc((4 * ((100vw - (24px * 13)) / 12)) + 72px);margin:auto;}}
-			/* sc-component-id: sc-ifAKCX */
-
-			.img_right {
-				position: relative;
-				width: 100%;
-			}
-
-			@media (min-width:769px) {
-				.img_right {
-					position: absolute;
-					top: 0;
-					left: 50%;
-					right: 0;
-					bottom: 0;
-					width: 50%;
-					height: 50vw;
-					margin: auto;
-				}
-			}
-
-			.img_left {
-				position: relative;
-				width: 100%;
-			}
-
-			@media (min-width:769px) {
-				.img_left {
-					position: absolute;
-					top: 0;
-					left: 0;
-					right: 50%;
-					bottom: 0;
-					width: 50%;
-					height: 50vw;
-					margin: auto;
-				}
-			}
-			/* sc-component-id: sc-EHOje */
-
-			.img_con {
-				opacity: 0.8;
-				-webkit-transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
-				transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
-			}
-
-			/* sc-component-id: sc-bZQynM */
-
-			.img_file {
-				opacity: 0.5;
-				-webkit-transition: opacity 100ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
-				transition: opacity 100ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-			/* sc-component-id: sc-dnqmqq */
-			/* column_1의 h2>span의 설정 */
-			@media (min-width:769px) {
-				.spanoption_h2_column_1 {
-					background: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0, transparent 1px);
-					background-position: 0 92%;
-					background-size: 100% 1px;
-					background-repeat: no-repeat;
-					-webkit-transition: background 300ms ease-out;
-					transition: background 300ms ease-out;
-				}
-			}
-			/* sc-component-id: sc-cSHVUG */
-
-			.text_only {
-				margin: 0 32px;
-			}
-
-			.text_only:before,
-			.text_only:after {
-				content: ' ';
-				display: table;
-			}
-
-			.text_only:before {
-				margin-top: -36px;
-				height: 36px;
-				visibility: hidden;
-			}
-
-			@media (min-width:481px) {
-				.text_only {
-					margin: 0 calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
-				}
-			}
-
-			@media (min-width:769px) {
-				.text_only {
-					min-height: 100vh;
-					display: -webkit-box;
-					display: -webkit-flex;
-					display: -ms-flexbox;
-					display: flex;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
-					-webkit-box-pack: center;
-					-webkit-justify-content: center;
-					-ms-flex-pack: center;
-					justify-content: center;
-					margin-left: calc((1 * ((100vw - (24px * 13)) / 12)) + 48px);
-					margin-right: 0;
-					width: calc((6 * ((100vw - (24px * 13)) / 12)) + 120px);
-					overflow: visible;
-				}
-				.text_only h1,
-				.text_only h2 {
-					width: calc((8 * ((100vw - (24px * 13)) / 12)) + 168px);
-				}
-			}
-			@media (min-width: 769px){
-
-				.text_only_inner {
-				    margin: 120px 0;
-				}
-
-				.text_only_inner {
-				    margin: 64px 0;
-				}
-			}
-/* 메뉴바 세부 설정 */
-			.menu{
-				position:fixed;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right:0;
-				background-color:rgba(255, 255, 255,0.8);
-				background: 0.5;
-				height: 50px;
-				z-index: 1000;
-				display: flex;
-				flex-direction: row-reverse;
-
-
-			}
-			.menu>ul:first-child{
-				height: 100%;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				padding-right: 5vw;
-
-			}
-			.menu>ul>li{
-				color: black;
-				opacity: 1;
-			}
-			@media (max-width:768px){
-				.blank_100{
-					height: 100px;
-				}
-				.menu{
-					display: none;
-				}
-			}
-			.column_1.bg{
-				background-image: url(./images/hims.png);
-				background-size: cover;
-			}
-
-/* *{border:1px solid black} */
-	  </style>
 
 	  <!-- 기본css -->
 	  <style type="text/css" data-styled-components="" data-styled-components-is-local="false">
@@ -440,7 +148,9 @@
   		img {
   			border-style: none;
   		}
-
+		iframe {
+			border-style: none;
+		}
   		svg:not(:root) {
   			overflow: hidden;
   		}
@@ -857,7 +567,7 @@
   		a {
   			color: inherit;
   			cursor: pointer;
-  			text-decoration: underline;
+  			//text-decoration: underline;
   		}
 
   		.notouch a:hover,
@@ -884,70 +594,532 @@
   		}
 		* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
   	</style>
+<!-- 상세css -->
+<style media="screen">
+	.text_img {
+		position: relative;
+		margin: 0 32px 32px;
+		padding-top: 60px;
+	}
 
+	.text_img:before,
+	.text_img:after {
+		content: ' ';
+		display: table;
+	}
+
+	@media (min-width:481px) {
+		.text_img {
+			margin-left: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
+			margin-right: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
+		}
+	}
+
+	@media (min-width:769px) {
+		.text_img {
+			margin: 0;
+			min-height: 100vh;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-align-items: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+		}
+	}
+
+		  .img_text {
+			  position: relative;
+			  margin: 0 32px 32px;
+			  padding-top: 60px;
+		  }
+
+		  .img_text:before,
+		  .img_text:after {
+			  content: ' ';
+			  display: table;
+		  }
+
+		  @media (min-width:481px) {
+			  .img_text {
+				  margin-left: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
+				  margin-right: calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
+			  }
+		  }
+
+		  @media (min-width:769px) {
+			  .img_text {
+				  margin: 0;
+				  min-height: 100vh;
+				  display: -webkit-box;
+				  display: -webkit-flex;
+				  display: -ms-flexbox;
+				  display: flex;
+				  -webkit-align-items: center;
+				  -webkit-box-align: center;
+				  -ms-flex-align: center;
+				  align-items: center;
+				  -webkit-flex-direction: row-reverse;
+				  -ms-flex-direction: row-reverse;
+				  flex-direction: row-reverse;
+			  }
+		  }
+
+		  /* sc-component-id: sc-htpNat */
+
+		  @media (min-width:769px) {
+			  .text_box {
+				  display: -webkit-box;
+				  display: -webkit-flex;
+				  display: -ms-flexbox;
+				  display: flex;
+				  -webkit-flex-direction: column;
+				  -ms-flex-direction: column;
+				  flex-direction: column;
+				  -webkit-box-pack: center;
+				  -webkit-justify-content: center;
+				  -ms-flex-pack: center;
+				  justify-content: center;
+				  width: 50%;
+				  min-height: 600px;
+				  padding: 120px 0;
+				  box-sizing: border-box;
+			  }
+		  }
+
+		  /* sc-component-id: sc-bxivhb */
+
+		  .text_con>* {
+			  opacity:0;
+			  -webkit-transform:translateY(10px);
+			  -ms-transform:translateY(10px);
+			  transform:translateY(10px);
+			  will-change:opacity;
+			  -webkit-transition:opacity 500ms cubic-bezier(0.67,0.00,0.67,1.00),-webkit-transform 500ms cubic-bezier(0.33,0.00,0.00,1.00);
+			  -webkit-transition:opacity 500ms cubic-bezier(0.67,0.00,0.67,1.00),transform 500ms cubic-bezier(0.33,0.00,0.00,1.00);
+			  transition:opacity 500ms cubic-bezier(0.67,0.00,0.67,1.00),transform 500ms cubic-bezier(0.33,0.00,0.00,1.00);}
+		  .text_con > *{
+			  opacity:1;
+			  -webkit-transform:translateY(0);
+			  -ms-transform:translateY(0);
+			  transform:translateY(0);
+			  -webkit-transition-duration:500ms;
+			  transition-duration:500ms;
+		  }
+		  .text_con > *:nth-child(n + 2){
+			  -webkit-transition-delay:250ms;
+			  transition-delay:250ms;
+			  }
+		  .text_con > h1:nth-child(-n + 2),.text_con > h2:nth-child(-n + 2),.text_con > h4:nth-child(-n + 2){-webkit-transition-delay:0ms;transition-delay:0ms;}
+		  @media (min-width:769px){.text_con{width:calc((4 * ((100vw - (24px * 13)) / 12)) + 72px);margin:auto;}}
+		  /* sc-component-id: sc-ifAKCX */
+
+		  .img_right {
+			  position: relative;
+			  width: 100%;
+		  }
+
+		  @media (min-width:769px) {
+			  .img_right {
+				  position: absolute;
+				  top: 0;
+				  left: 50%;
+				  right: 0;
+				  bottom: 0;
+				  width: 50%;
+				  height: 50vw;
+				  margin: auto;
+			  }
+		  }
+
+		  .img_left {
+			  position: relative;
+			  width: 100%;
+		  }
+
+		  @media (min-width:769px) {
+			  .img_left {
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  right: 50%;
+				  bottom: 0;
+				  width: 50%;
+				  height: 50vw;
+				  margin: auto;
+			  }
+		  }
+		  /* sc-component-id: sc-EHOje */
+
+		  .img_con {
+			  opacity: 0.8;
+			  -webkit-transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+			  transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+		  }
+
+		  /* sc-component-id: sc-bZQynM */
+
+		  .img_file {
+			  opacity: 0.5;
+			  -webkit-transition: opacity 100ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+			  transition: opacity 100ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+		  }
+		  /* sc-component-id: sc-dnqmqq */
+		  /* column_1의 h2>span의 설정 */
+		  @media (min-width:769px) {
+			  .spanoption_h2_column_1 {
+				  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0, transparent 1px);
+				  background-position: 0 92%;
+				  background-size: 100% 1px;
+				  background-repeat: no-repeat;
+				  -webkit-transition: background 300ms ease-out;
+				  transition: background 300ms ease-out;
+			  }
+		  }
+		  /* sc-component-id: sc-cSHVUG */
+
+		  .text_only {
+			  margin: 0 32px;
+		  }
+
+		  .text_only:before,
+		  .text_only:after {
+			  content: ' ';
+			  display: table;
+		  }
+
+		  .text_only:before {
+			  margin-top: -36px;
+			  height: 36px;
+			  visibility: hidden;
+		  }
+
+		  @media (min-width:481px) {
+			  .text_only {
+				  margin: 0 calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
+			  }
+		  }
+
+		  @media (min-width:769px) {
+			  .text_only {
+				  min-height: 100vh;
+				  display: -webkit-box;
+				  display: -webkit-flex;
+				  display: -ms-flexbox;
+				  display: flex;
+				  -webkit-flex-direction: column;
+				  -ms-flex-direction: column;
+				  flex-direction: column;
+				  -webkit-box-pack: center;
+				  -webkit-justify-content: center;
+				  -ms-flex-pack: center;
+				  justify-content: center;
+				  margin-left: calc((1 * ((100vw - (24px * 13)) / 12)) + 48px);
+				  margin-right: 0;
+				  width: calc((6 * ((100vw - (24px * 13)) / 12)) + 120px);
+				  overflow: visible;
+			  }
+			  .text_only h1,
+			  .text_only h2 {
+				  width: calc((8 * ((100vw - (24px * 13)) / 12)) + 168px);
+			  }
+		  }
+		  @media (min-width: 769px){
+
+			  .text_only_inner {
+				  margin: 120px 0;
+			  }
+
+			  .text_only_inner {
+				  margin: 64px 0;
+			  }
+		  }
+		  /* sc-component-id: sc-bZQynM */
+
+		  .img_option {
+			  opacity: 1;
+			  -webkit-transition: opacity 100ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+			  transition: opacity 100ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  padding: 10%;
+		  }
+			  @media (max-width: 480px) {
+				  .img_option{
+					  width: calc(100vw - 64px);
+					  height: 50vw;
+				  }
+			  }
+			  @media (max-width: 768px) {
+				  .img_option{
+					  width: calc((6 * ((100vw - (24px * 9)) / 8)) + 120px);
+					  height: 50vw;
+				  }
+			  }
+  /* 오랜지 버튼 세부설정 */
+		  .orange_btn{
+			  width: 180px;
+			  height: 64px;
+			  background-color: rgb(255, 110, 26);
+			  border: none;
+			  border-radius: 4px;
+			  color: white;
+			  margin: 1em 0 0;
+
+		  }
+  /* 메뉴바 세부 설정 */
+  		  .logo{
+			float: left;
+			height: 50px;
+			z-index: 1500;
+			margin-left:calc((1 * ((100vw - (24px * 13)) / 12)) + 48px);
+
+  		  }
+		  .logo>ul{
+			  height: 100%;
+			  display: flex;
+			  flex-direction: row;
+			  justify-content: flex-start;
+			  //align-items: baseline;
+
+
+		  }
+		  .logo>ul>li:before{
+		      content: "";
+		      display: none;
+		  }
+		  .menu{
+			  position:fixed;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right:0;
+			  background-color:rgba(255, 255, 255,0.8);
+			  background: 0.5;
+			  height: 50px;
+			  z-index: 1000;
+			  display: flex;
+			  align-items: baseline;
+			  justify-content: space-between;
+			  //flex-direction: row-reverse;
+			  margin: 40px 0;
+
+
+		  }
+
+		  .menu>ul{
+			  height: 100%;
+			  display: flex;
+			  flex-direction: row;
+			  align-items: baseline;
+			  margin-right:calc((1 * ((100vw - (24px * 13)) / 12)) + 48px);
+
+		  }
+		  .menu>ul>li{
+			  color: black;
+			  opacity: 1;
+		  }
+		  @media (max-width:768px){
+			  .blank_100{
+				  height: 100px;
+			  }
+			  .menu{
+				  display: none;
+			  }
+		  }
+		  .column_1.bg{
+			  background-image: url(./images/img_cover.jpeg);
+			  background-size: cover;
+		  }
+		  .m_menu{
+			  display:none;
+		  }
+		  @media (max-width:550px){
+			  .m_menu_show{
+				  display: flex;
+				  padding-left: 50px;
+				  align-items: center;
+				  //justify-content: center;
+				  width: 100vw;
+				  height: 100vh;
+				  background: #2F60A2;
+				  position: fixed;
+				  top: 0;
+				  left: 0;
+				  bottom:0;
+				  right:0;
+				  z-index: 1000;
+				  overflow: hidden;
+
+			  }
+		  }
+		  .m_menu_inner{
+			  border: 1px solid black;
+
+		  }
+		  .m_menu_inner li{
+
+		  }
+		  .menu_button{
+			  display: none;
+		  }
+		  @media (max-width:550px){
+			  .menu_button{
+				  display: block;
+				  position: fixed;
+				  top:20px;
+				  left: 20px;
+				  z-index: 1500;
+			  }
+		  }
+		  .scroll_hidden{
+			  overflow:hidden;
+		  }
+		  /* *{border:1px solid black} */
+</style>
 
 	</head>
 	<body>
+
+		<section class="m_menu" id="m_menu">
+
+			<section class="m_menu_inner">
+				<ul>
+					<li><a href="#"><h1>메뉴1</h1></a></li>
+					<li><a href="#"><h1>메뉴1</h1></a></li>
+					<li><a href="#"><h1>메뉴1</h1></a></li>
+					<li><a href="#"><h1>메뉴1</h1></a></li>
+					<li><a href="#"><h1>메뉴1</h1></a></li>
+				</ul>
+			</section>
+
+		</section>
+
 		<nav class="menu">
+			<div class="logo">
+				<ul>
+					<li><img src="./images/logo_rapael.svg" alt="" ></li>
+				</ul>
+			</div>
 			<ul>
-				<li><a href="#">메뉴1</a></li>
-				<li>메뉴2</li>
-				<li>메뉴3</li>
-				<li>메뉴4</li>
-				<li>메뉴5</li>
+
+				<li><a href="#">제품</a></li>
+				<li><a href="#">사용후기</a></li>
+				<li><a href="#">재활 노하우</a></li>
+				<li><a href="#">사용후기</a></li>
 			</ul>
+
 		</nav>
+
 		<div class="main">
 			<div class="blank_100">
 
 			</div>
-			<section class="column_1 bg ms">
-				<div class="text_only">
-					<div>
-						<div class="text_only_inner">
-							<img src="./images/hims.png" alt="" style="width:100px;height:150px;" class="">
-							<img src="./images/hims.png" alt="" style="width:100px;height:150px;">
-							<img src="./images/hims.png" alt="" style="width:100px;height:150px;">
-							<img src="./images/hims.png" alt="" style="width:100px;height:150px;">
-							<h1>뇌졸중재활 어떻게 해야 할까요?</h1>
-							<h3>text만 있는 섹션입니다.Over the past decade, we have helped create $4 billion in startup value and have led numerous Fortune 500 businesses through today's evolving landscape.</h3>
-							<button type="button" name="button">button</button>
-
+		<div type="button" name="button" class="menu_button">
+			<img src="./images/menu.svg" style="width:30px;height:30px;"/>
+			<img src="./images/Triangle.svg"  style="width:30px;height:30px;display:none;"/>
+		</div>
+		<section class="column_1 bg ms">
+			<div class="text_only">
+				<div>
+					<div class="text_only_inner">
+						<div style="margin-bottom:60px;">
+							<img src="./images/Awads PCA 2017.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;" class="">
+							<img src="./images/Awards AARP 2017.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;">
+							<img src="./images/Awards CES 2017.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;">
+							<img src="./images/Awards CES 2018.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;">
 						</div>
+						<h1>뇌졸중 재활,<br>어떻게 해야 할까요?</h1>
+						<h3>라파엘 재활 솔루션이 그 답을 알려드립니다.</h3>
+						<button type="button" name="button" class="orange_btn">제품 구매</button>
+
 					</div>
 				</div>
-			</section>
-			<section class="column_2 text_img ms">
+			</div>
+		</section>
+		<section class="column_1 ms">
+			<div class="text_only">
+				<div>
+					<div class="text_only_inner">
+						<h1>뇌졸중재활 어떻게 해야 할까요?</h1>
+						<h3>text만 있는 섹션입니다.Over the past decade, we have helped create $4 billion in startup value and have led numerous Fortune 500 businesses through today's evolving landscape.</h3>
+						<button type="button" name="button">button</button>
 
-				<div class="text_box">
-					<div class="text_con">
-						<h4>h4입니다.</h4>
-						<h2>h2입니다.</h2>
-						<p>Working with an all-star team, we crafted a web presence and art direction to bring Hims to market; a men’s wellness brand aimed at normalizing treatment for hair-loss, erectile dysfunction and adult acne. Our goal was to provide detailed information and solutions in an approachable, relatable and personal fashion. Hims features natural skin-tone colors, a diverse, youthful cast, conversational copy (and emojis), and a warm, playful site design.</p>
 					</div>
 				</div>
-				<div class="img_right">
-				<div class="img_con">
-						<img src="./images/hims.png" alt="">
-				</div>
-				</div>
-			</section>
-			<section class="column_2 img_text ms">
+			</div>
+		</section>
+		<section class="column_1 ms">
+			<div class="text_only">
+				<div>
+					<div class="text_only_inner">
+						<h1>뇌졸중재활 어떻게 해야 할까요?</h1>
+						<h3>text만 있는 섹션입니다.Over the past decade, we have helped create $4 billion in startup value and have led numerous Fortune 500 businesses through today's evolving landscape.</h3>
+						<button type="button" name="button">button</button>
 
-				<div class="text_box">
-					<div class="text_con">
-
-						<h4>h4입니다.</h4>
-						<h2>h2입니다.</h2>
-						<p>Working with an all-star team, we crafted a web presence and art direction to bring Hims to market; a men’s wellness brand aimed at normalizing treatment for hair-loss, erectile dysfunction and adult acne. Our goal was to provide detailed information and solutions in an approachable, relatable and personal fashion. Hims features natural skin-tone colors, a diverse, youthful cast, conversational copy (and emojis), and a warm, playful site design.</p>
 					</div>
 				</div>
-				<div class="img_left">
-				<div class="img_con">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4074319397682!2d-122.17190768484961!3d37.427478739837674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford+University!5e0!3m2!1sen!2skr!4v1515425363407" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+		<section class="column_2 text_img ms">
+
+			<div class="text_box">
+				<div class="text_con">
+					<h4>h4입니다.</h4>
+					<h2>h2입니다.</h2>
+					<p>Working with an all-star team, we crafted a web presence and art direction to bring Hims to market; a men’s wellness brand aimed at normalizing treatment for hair-loss, erectile dysfunction and adult acne. Our goal was to provide detailed information and solutions in an approachable, relatable and personal fashion. Hims features natural skin-tone colors, a diverse, youthful cast, conversational copy (and emojis), and a warm, playful site design.</p>
 				</div>
+			</div>
+			<div class="img_right">
+			<div class="img_con">
+					<img src="./images/hims.png" alt="">
+			</div>
+			</div>
+		</section>
+		<section class="column_2 img_text ms">
+
+			<div class="text_box">
+				<div class="text_con">
+					<h4>h4입니다.</h4>
+					<h2>h2입니다.</h2>
+					<p>Working with an all-star team, we crafted a web presence and art direction to bring Hims to market; a men’s wellness brand aimed at normalizing treatment for hair-loss, erectile dysfunction and adult acne. Our goal was to provide detailed information and solutions in an approachable, relatable and personal fashion. Hims features natural skin-tone colors, a diverse, youthful cast, conversational copy (and emojis), and a warm, playful site design.</p>
 				</div>
-			</section>
+			</div>
+			<div class="img_left">
+			<div class="img_con">
+					<img src="./images/hims.png" alt="">
+			</div>
+			</div>
+		</section>
+		<section class="column_2 img_text ms">
+
+			<div class="text_box">
+				<div class="text_con">
+
+					<h4>h4입니다 지도 입니다.</h4>
+					<h2>h2입니다.</h2>
+					<p>Working with an all-star team, we crafted a web presence and art direction to bring Hims to market; a men’s wellness brand aimed at normalizing treatment for hair-loss, erectile dysfunction and adult acne. Our goal was to provide detailed information and solutions in an approachable, relatable and personal fashion. Hims features natural skin-tone colors, a diverse, youthful cast, conversational copy (and emojis), and a warm, playful site design.</p>
+				</div>
+			</div>
+			<div class="img_left">
+			<div class="img_con">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4074319397682!2d-122.17190768484961!3d37.427478739837674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford+University!5e0!3m2!1sen!2skr!4v1515425363407" frameborder="0" style="border:0;" allowfullscreen class="img_option"></iframe>
+			</div>
+			</div>
+		</section>
 
 		</div>
 
@@ -961,21 +1133,33 @@
 
 		<script type="text/javascript">
 		window.sr = ScrollReveal();
-		sr.reveal('.box1');
-		sr.reveal('.box2');
-
-		// init controller
-		$(function() {
-			var controller = new ScrollMagic.Controller();
-
-			// create a scene
-			new ScrollMagic.Scene({
-			        duration: 1000,    // the scene should last for a scroll distance of 100px
-			        offset: 300        // start this scene after scrolling for 50px
-			    })
-			    .setPin(".ms") // pins the element for the the scene's duration
-			    .addTo(controller); // assign the scene to the controller
+		sr.reveal('.ms', {
+			duration:800
 		});
+		//sr.reveal('.ms2');
+		sr.reveal('.ms2', {
+		  viewFactor: 0.5
+		});
+
+		sr.reveal('.foo-5', {
+		  duration: 200
+		});
+
+		//메뉴버튼 토글
+		$(function(){
+			var toggle = true;
+			$(".menu_button").click(function () {
+				$('.m_menu').toggleClass("m_menu_show");
+				$('body').toggleClass("scroll_hidden");
+
+
+			 	$('img',this).toggle();
+
+			});
+
+
+		});
+
 
 		</script>
 	</body>
