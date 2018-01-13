@@ -22,7 +22,7 @@
 	  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 	  <!-- font -->
-	  <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	  <link href='HTTPS://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 
 	<!-- scrollmagic -->
 	<script src="ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
@@ -497,12 +497,18 @@
 			line-height: 1.6;
 			text-align: left;
   		}
+		p.orange{
+			color:rgb(255, 110, 26)
+		}
 		@media (max-width:768px) {
 			.p{
 				font-family: SpoqaHanSans;
 				font-size: 16px;
 				line-height: 1.5;
 				text-align: left;
+			}
+			p.orange{
+				color:rgb(255, 110, 26)
 			}
 		}
 
@@ -636,6 +642,7 @@
 		position: relative;
 		margin: 0 32px 32px;
 		padding-top: 60px;
+		min-height: 100vh;
 	}
 
 	.text_img:before,
@@ -760,7 +767,21 @@
 
 		  .img_right {
 			  position: relative;
+			  display: -webkit-box;
+			  display: -webkit-flex;
+			  display: -ms-flexbox;
+			  display: flex;
+			  -webkit-flex-direction: column;
+			  -ms-flex-direction: column;
+			  flex-direction: column;
+			  -webkit-box-pack: center;
+			  -webkit-justify-content: center;
+			  -ms-flex-pack: center;
+			  justify-content: center;
 			  width: 100%;
+			  //min-height: 600px;
+			  padding: 80px 0 40px 0;
+			  box-sizing: border-box;
 		  }
 
 		  @media (min-width:769px) {
@@ -770,9 +791,11 @@
 				  left: 50%;
 				  right: 0;
 				  bottom: 0;
-				  width: 50%;
+				  //width: 50%;
 				  height: 50vw;
 				  margin: auto;
+				  padding-right: 100px;
+
 			  }
 		  }
 
@@ -796,9 +819,23 @@
 		  /* sc-component-id: sc-EHOje */
 
 		  .img_con {
-			  opacity: 0.8;
+			//width: calc((4 * ((100vw - (24px * 13)) / 12)) + 72px);
+			width: 100%;
+			margin: auto;
+			margin-left: 0;
+			object-fit: cover;
+			//overflow: hidden;
+
+			  /* opacity: 0.8;
 			  -webkit-transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
-			  transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00);
+			  transition: opacity 500ms cubic-bezier(0.67, 0.00, 0.67, 1.00); */
+		  }
+		  @media (min-width:769px) {
+		  	.img_con img{
+		  		max-width: 600px;
+
+		  	}
+
 		  }
 
 		  /* sc-component-id: sc-bZQynM */
@@ -813,22 +850,14 @@
 			  width: 100%;
 			  height: 100%;
 		  }
-		  /* sc-component-id: sc-dnqmqq */
-		  /* column_1의 h2>span의 설정 */
-		  @media (min-width:769px) {
-			  .spanoption_h2_column_1 {
-				  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0, transparent 1px);
-				  background-position: 0 92%;
-				  background-size: 100% 1px;
-				  background-repeat: no-repeat;
-				  -webkit-transition: background 300ms ease-out;
-				  transition: background 300ms ease-out;
-			  }
-		  }
+
+		  /* column_1 설정 */
+
 		  /* sc-component-id: sc-cSHVUG */
 
 		  .text_only {
 			  margin: 0 40px;
+			  min-height: 100vh;
 		  }
 
 		  .text_only:before,
@@ -1241,18 +1270,106 @@
 		</section><!--column_1 bg ms-->
 
 <!--============================================================================================================-->
-		<section class="column_1 ms">
-			<div class="text_only">
-				<div>
-					<div class="text_only_inner">
-						<h1>뇌졸중재활 어떻게 해야 할까요?</h1>
-						<h3>text만 있는 섹션입니다.Over the past decade, we have helped create $4 billion in startup value and have led numerous Fortune 500 businesses through today's evolving landscape.</h3>
-						<button type="button" name="button">button</button>
-
-					</div>
+		<section class="column_2 text_img ms">
+			<div class="img_right">
+			<div class="img_con">
+					<img src="./images/img-sample.jpg" alt="">
+			</div>
+			</div>
+			<div class="text_box">
+				<div class="text_con">
+						<h1>당신의 감각을<br>자극하세요.</h1>
+						<h3>라파엘은 당신의 움직임을 카피해서 스크린에 재현시킵니다. 반복훈련을 시각적, 청각적 자극과 함께 한다면 당신의 뇌는 더욱 빨리 학습할 수 있습니다.</h3>
+						<a href="#"> <p class="orange">감각훈련과 뇌졸중 회복의 상관관계 →</p> </a>
 				</div>
 			</div>
+
 		</section>
+
+<!--============================================================================================================-->
+<section class="column_2 text_img ms">
+	<div class="img_right">
+	<div class="img_con">
+			<img src="./images/img-sample.jpg" alt="">
+	</div>
+	</div>
+	<div class="text_box">
+		<div class="text_con">
+				<h1>당신의 감각을<br>자극하세요.</h1>
+				<h3>라파엘은 당신의 움직임을 카피해서 스크린에 재현시킵니다. 반복훈련을 시각적, 청각적 자극과 함께 한다면 당신의 뇌는 더욱 빨리 학습할 수 있습니다.</h3>
+				<a href="#"> <p class="orange">감각훈련과 뇌졸중 회복의 상관관계 →</p> </a>
+		</div>
+	</div>
+
+</section>
+
+<!--============================================================================================================-->
+<section class="column_2 text_img ms">
+	<div class="img_right">
+	<div class="img_con">
+			<img src="./images/img-sample.jpg" alt="">
+	</div>
+	</div>
+	<div class="text_box">
+		<div class="text_con">
+				<h1>규칙적으로<br>훈련하세요.</h1>
+				<h3>하루에 얼마나 어떻게 훈련하고 있나요? 당신의 훈련 시간은 충분합니까? 라파엘 홈은 하루에 당신이 해야할 훈련내용과 시간을 스케쥴링 해줍니다.</h3>
+				<a href="#"> <p class="orange">나의 최적의 훈련시간 계산법 →</p> </a>
+		</div>
+	</div>
+
+</section>
+
+<!--============================================================================================================-->
+<section class="column_2 text_img ms">
+	<div class="img_right">
+	<div class="img_con">
+			<img src="./images/img-sample.jpg" alt="">
+	</div>
+	</div>
+	<div class="text_box">
+		<div class="text_con">
+				<h1>더 높이<br>도전하세요.</h1>
+				<h3>지금 당신의 움직임에 만족하지 마세요. 더 크게 더 많이 움직여 보세요. 라파엘 알고리즘은 난이도를 조절하여 당신의 한계를 끌어올려줍니다.</h3>
+				<a href="#"> <p class="orange">도전적인 과제가 뇌에 미치는 영향 →</p> </a>
+		</div>
+	</div>
+
+</section>
+
+<!--============================================================================================================-->
+<section class="column_2 text_img ms">
+	<div class="img_right">
+	<div class="img_con">
+			<img src="./images/img-sample.jpg" alt="">
+	</div>
+	</div>
+	<div class="text_box">
+		<div class="text_con">
+				<h1>전문적인<br>코칭을 받으세요.</h1>
+				<h3>한 달에 한 번 치료사와 당신의 향상을 평가해보세요. 그리고 그동안 훈련을 잘 했는지, 앞으로 무엇을 집중해야 할지 상담받아보세요.</h3>
+				<a href="#"> <p class="orange">코칭 세션 체험하기 →</p> </a>
+		</div>
+	</div>
+
+</section>
+
+<!--============================================================================================================-->
+<section class="column_2 text_img ms">
+	<div class="img_right">
+	<div class="img_con">
+			<img src="./images/img-sample.jpg" alt="">
+	</div>
+	</div>
+	<div class="text_box">
+		<div class="text_con">
+				<h1>가까운 병원에서<br>체험해 보세요.</h1>
+				<h3>라파엘은 스탠포드 메디컬 센터를 비롯한 미국 전역 30개 병원에서 사용중입니다.</h3>
+				<a href="#"> <p class="orange">가까운 병원 찾아보기 →</p> </a>
+		</div>
+	</div>
+
+</section>
 
 <!--============================================================================================================-->
 
