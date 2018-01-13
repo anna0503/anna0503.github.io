@@ -353,12 +353,13 @@
   		}
 
   		h1 {
-  			line-height: 1.16em;
-  			margin-bottom: 0.46154em;
-			font-weight: 700;
+			font-family: SpoqaHanSans;
+			font-size: 52px;
+			font-weight: bold;
+			text-align: left;
   		}
 
-  		@media (min-width:1025px) {
+  		/* @media (min-width:1025px) {
   			h1 {
   				font-size: calc(5.142857142857142vw - 10px);
   			}
@@ -368,20 +369,25 @@
   			h1 {
   				font-size: calc(5.153502235469449vw - 10px);
   			}
-  		}
+  		} */
 
   		@media (max-width:768px) {
   			h1 {
-  				font-size: calc(3.9312039312039313vw);
+				font-family: SpoqaHanSans;
+				font-size: 32px;
+				font-weight: bold;
+				text-align: left;
   			}
   		}
 
   		h2 {
-  			line-height: 1.285714em;
-  			margin-bottom: 0.714286em;
+			font-family: SpoqaHanSans;
+			font-size: 42px;
+			font-weight: bold;
+			text-align: left;
   		}
 
-  		@media (min-width:1025px) {
+  		/* @media (min-width:1025px) {
   			h2 {
   				font-size: calc(3.9285714285714284vw - -0.57px);
   			}
@@ -391,19 +397,24 @@
   			h2 {
   				font-size: calc(2.384500745156483vw + 21.69px);
   			}
-  		}
+  		} */
 
   		@media (max-width:768px) {
   			h2 {
-  				font-size: calc(1.9656019656019657vw + 24.92px);
+				font-family: SpoqaHanSans;
+				font-size: 28px;
+				font-weight: bold;
+				text-align: left;
   			}
   		}
 
   		h3 {
-  			line-height: 1.4em;
+			font-family: SpoqaHanSans;
+			font-size: 24px;
+			text-align: left;
   		}
 
-  		@media (min-width:1025px) {
+  		/* @media (min-width:1025px) {
   			h3 {
   				font-size: calc(2.142857142857143vw + 1.14px);
   			}
@@ -413,14 +424,16 @@
   			h3 {
   				font-size: calc(1.1922503725782414vw + 14.84px);
   			}
-  		}
+  		} */
 
   		@media (max-width:768px) {
   			h3 {
-  				font-size: 24px;
+				font-family: SpoqaHanSans;
+				font-size: 18px;
+				text-align: left;
   			}
   		}
-
+/*
   		h4 {
   			font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   			line-height: 1.25em;
@@ -444,13 +457,15 @@
   			h4 {
   				font-size: 12px;
   			}
-  		}
+  		} */
 
   		h5 {
-  			line-height: 1.66667em;
+			font-family: SpoqaHanSans;
+			font-size: 16px;
+			text-align: left;
   		}
 
-  		@media (min-width:1025px) {
+  		/* @media (min-width:1025px) {
   			h5 {
   				font-size: calc(1.6964285714285714vw - -0.43px);
   			}
@@ -460,7 +475,7 @@
   			h5 {
   				font-size: calc(0.8941877794336811vw + 11.13px);
   			}
-  		}
+  		} */
 
   		@media (max-width:768px) {
   			h5 {
@@ -468,9 +483,27 @@
   			}
   		}
 
+		h6 {
+			font-family: SpoqaHanSans;
+			font-size: 16px;
+			text-align: left;
+		}
+
+
   		p {
-  			margin-bottom: 1.777778em;
+			font-family: SpoqaHanSans;
+			font-size: 20px;
+			line-height: 1.6;
+			text-align: left;
   		}
+		@media (max-width:768px) {
+			.p{
+				font-family: SpoqaHanSans;
+				font-size: 16px;
+				line-height: 1.5;
+				text-align: left;
+			}
+		}
 
   		hr {
   			margin: auto;
@@ -552,7 +585,7 @@
   			position: relative;
   		}
 
-  		ul li:before {
+  		/* ul li:before {
   			content: "";
   			display: inline-block;
   			width: 24px;
@@ -562,7 +595,7 @@
   			/* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPHBvbHlnb24gZmlsbD0icmdiYSgwLCAwLCAwLCAwLjQzKSIgcG9pbnRzPSI4Ljk5OTk5MzkgMTYuMiA1Ljc5OTk5MzkgMTMgNC4zOTk5OTM5IDE0LjQgOC45OTk5OTM5IDE5IDE4Ljk5OTk5MzkgOSAxNy41OTk5OTM5IDcuNiI+PC9wb2x5Z29uPgo8L3N2Zz4K); */
   			background-size: contain;
   			background-repeat: no-repeat;
-  		}
+  		} */
 
   		a {
   			color: inherit;
@@ -789,7 +822,7 @@
 		  /* sc-component-id: sc-cSHVUG */
 
 		  .text_only {
-			  margin: 0 32px;
+			  margin: 0 40px;
 		  }
 
 		  .text_only:before,
@@ -806,7 +839,7 @@
 
 		  @media (min-width:481px) {
 			  .text_only {
-				  margin: 0 calc((1 * ((100vw - (24px * 9)) / 8)) + 48px);
+				  /* margin: 0 calc((1 * ((100vw - (24px * 9)) / 8)) + 48px); */
 			  }
 		  }
 
@@ -844,6 +877,65 @@
 				  margin: 64px 0;
 			  }
 		  }
+		  /* awards_group */
+		  .awards_group{
+			display: flex;
+			flex-direction: row;
+			//flex-wrap: wrap;
+		  }
+		  .awards_group>div{
+			display: flex;
+		  }
+		  .awards_group .awards{
+		  	display: flex;
+			flex-direction: row;
+			margin-right:20px;
+		  }
+		  @media (max-width:768px) {
+		  	.awards_group{
+		  		margin-bottom: 30px;
+				flex-direction: column;
+		  	}
+
+			  .awards_group .awards:nth-child(1),.awards_group .awards:nth-child(3){
+  		  		margin-right: 30px;
+  		  	}
+			.awards_group .awards:nth-child(2),.awards_group .awards:nth-child(4){
+		  		margin-right: 0px;
+		  	}
+		  }
+
+
+		  .awards_group .awards>li{
+		  	padding:0;
+
+		  }
+		  .awards_group .awards>li:nth-child(2){
+		  	display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: flex-start;
+			min-width: 85px;
+		  }
+		  .awards_group .awards>li>span:nth-child(1){
+		  	font-size:16px;
+			font-weight: bolder;
+			height: 18px;
+		  }
+		  .awards_group .awards>li>span:nth-child(2), .awards_group .awards>li>span:nth-child(3){
+		  	font-size: 12px;
+			height: 12px;
+		  }
+		  .awards_group .awards>li:nth-child(1){
+			  min-height: 58px;
+  			min-width: 28.5px;
+		  }
+		  .awards_group .awards>li:nth-child(3){
+			  min-height: 58px;
+  			min-width: 28.5px;
+			  -webkit-transform: scaleX(-1);
+     		          transform: scaleX(-1);
+		  }
 		  /* sc-component-id: sc-bZQynM */
 
 		  .img_option {
@@ -871,19 +963,24 @@
 			  }
   /* 오랜지 버튼 세부설정 */
 		  .orange_btn{
-			  width: 180px;
-			  height: 64px;
-			  background-color: rgb(255, 110, 26);
-			  border: none;
-			  border-radius: 4px;
-			  color: white;
-			  margin: 1em 0 0;
+				width: 160px;
+				height: 58px;
+				background-color: rgb(255, 110, 26);
+				border: none;
+				border-radius: 4px;
+				color: white;
+				font-family: SpoqaHanSans;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 1.33;
+				text-align: center;
 
 		  }
+
   /* 메뉴바 세부 설정 */
   		  .logo{
 			float: left;
-			height: 50px;
+			height: 20px;
 			z-index: 1500;
 			margin-left:calc((1 * ((100vw - (24px * 13)) / 12)) + 48px);
 
@@ -900,6 +997,17 @@
 		  .logo>ul>li:before{
 		      content: "";
 		      display: none;
+		  }
+		  @media (max-width:768px) {
+		  	.logo{
+		  	margin-left:40px;
+			}
+			.logo>ul{
+				margin: 0;
+				padding: 0;
+				line-height: 0;
+
+			}
 		  }
 		  .menu{
 			  position:fixed;
@@ -919,6 +1027,12 @@
 
 
 		  }
+		  @media (max-width:768px) {
+		  	.menu{
+				align-items: center;
+				//margin-top: 24px;
+		  	}
+		  }
 
 		  .menu>ul{
 			  height: 100%;
@@ -928,22 +1042,45 @@
 			  margin-right:calc((1 * ((100vw - (24px * 13)) / 12)) + 48px);
 
 		  }
-		  .menu>ul>li{
+		  .menu>ul>li>a{
 			  color: black;
 			  opacity: 1;
+
 		  }
+		  .menu>ul>li>a:hover{
+		  	text-decoration: none;
+		  }
+		  .menu>ul>li>a>span{
+		  	font-size: 16px;
+			margin-right: 39px;
+		  }
+
 		  @media (max-width:768px){
 
 			  .menu>ul:nth-child(2){
 				  display: none;
 			  }
 		  }
+		  .menu_button{
+			  display: none;
+		  }
+		  @media (max-width:768px){
+			  .menu_button{
+				  display: block;
+				  /* position: fixed;
+				  top:40px;
+				  right: 20px; */
+				  margin-right: 40px;
+				  z-index: 1500;
+			  }
+		  }
+
 		  .blank_100{
 			display: block;
-			min-height: 300px;
-			background-image: url(./images/img_cover2.jpeg);
+			min-height: 81px;
+			/* background-image: url(./images/img_cover2.jpeg);
 			background-size: 200%;
-			background-position: 100% 0;
+			background-position: 100% 0; */
 			}
 		  @media (min-width:768px) {
 			  .column_1.bg{
@@ -992,18 +1129,7 @@
 		  .m_menu_inner li{
 
 		  }
-		  .menu_button{
-			  display: none;
-		  }
-		  @media (max-width:768px){
-			  .menu_button{
-				  display: block;
-				  position: fixed;
-				  top:40px;
-				  right: 20px;
-				  z-index: 1500;
-			  }
-		  }
+
 		  .scroll_hidden{
 			  overflow:hidden;
 		  }
@@ -1012,6 +1138,8 @@
 
 	</head>
 	<body>
+
+<!--============================================================================================================-->
 
 		<section class="m_menu" id="m_menu">
 
@@ -1027,6 +1155,8 @@
 
 		</section>
 
+<!--============================================================================================================-->
+
 		<nav class="menu">
 			<div class="logo">
 				<ul>
@@ -1034,41 +1164,76 @@
 				</ul>
 			</div>
 			<ul>
-
-				<li><a href="#">제품</a></li>
-				<li><a href="#">사용후기</a></li>
-				<li><a href="#">재활 노하우</a></li>
-				<li><a href="#">사용후기</a></li>
+				<li><a href="#"><span>제품</span></a></li>
+				<li><a href="#"><span>사용후기</span></a></li>
+				<li><a href="#"><span>재활 노하우</span></a></li>
+				<li><a href="#"><span>사용후기</span></a></li>
 			</ul>
+			<div type="button" name="button" class="menu_button">
+				<img src="./images/menu.svg" style="width:30px;height:30px;"/>
+				<img src="./images/Triangle.svg"  style="width:30px;height:30px;display:none;"/>
+			</div>
 
 		</nav>
+
+<!--============================================================================================================-->
+
 		<div class="blank_100">
-			<!-- <img src="./images/img_cover2.jpeg" alt=""> -->
+			<!-- 모바일 버전 top 이미지 -->
 		</div>
+
+<!--============================================================================================================-->
+
 		<div class="main">
 
-		<div type="button" name="button" class="menu_button">
-			<img src="./images/menu.svg" style="width:30px;height:30px;"/>
-			<img src="./images/Triangle.svg"  style="width:30px;height:30px;display:none;"/>
-		</div>
+
 		<section class="column_1 bg ms">
 			<div class="text_only">
 				<div>
 					<div class="text_only_inner">
-						<div style="margin-bottom:60px;">
-							<img src="./images/Awards PSA 2017.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;" class="">
-							<img src="./images/Awards AARP 2017.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;">
-							<img src="./images/Awards CES 2017.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;">
-							<img src="./images/Awards CES 2018.svg" alt="" style="width:128px;height:58px;margin-bottom:10px;">
-						</div>
+						<div class="awards_group">
+							<div>
+								<ul class="awards">
+									<li><img src='./images/img-awards-leaf.svg' alt=""></li>
+									<li><span>PSA 2017</span><span>POP SCIENCE</span><span>AWARDS</span></li>
+									<li><img src="./images/img-awards-leaf.svg" alt=""></li>
+								</ul>
+								<ul class="awards">
+									<li><img src='./images/img-awards-leaf.svg' alt=""></li>
+									<li><span>AARP 2017</span><span>CHAMPION</span><span>AWARDS</span></li>
+									<li><img src="./images/img-awards-leaf.svg" alt=""></li>
+								</ul>
+							</div>
+							<div>
+								<ul class="awards">
+									<li><img src='./images/img-awards-leaf.svg' alt=""></li>
+									<li><span>CES 2017</span><span>INNOVATION</span><span>AWARDS</span></li>
+									<li><img src="./images/img-awards-leaf.svg" alt=""></li>
+								</ul>
+								<ul class="awards">
+									<li><img src='./images/img-awards-leaf.svg' alt=""></li>
+									<li><span>CES 2018</span><span>INNOVATION</span><span>AWARDS</span></li>
+									<li><img src="./images/img-awards-leaf.svg" alt=""></li>
+								</ul>
+							</div>
+						</div><!-- .awards_group -->
 						<h1>뇌졸중 재활,<br>어떻게 해야 할까요?</h1>
 						<h3>라파엘 재활 솔루션이 그 답을 알려드립니다.</h3>
 						<button type="button" name="button" class="orange_btn">제품 구매</button>
 
-					</div>
+					</div><!-- .text_only_inner -->
 				</div>
-			</div>
-		</section>
+				<div style="margin-top:50px;">
+					<img src="./images/img-certifed-fda.svg" alt="">
+					<img src="./images/img-certified-ce.svg" alt="">
+					<img src="./images/img-certifed-iso.svg" alt="">
+
+				</div>
+			</div><!-- .text_only -->
+
+		</section><!--column_1 bg ms-->
+
+<!--============================================================================================================-->
 		<section class="column_1 ms">
 			<div class="text_only">
 				<div>
@@ -1081,6 +1246,9 @@
 				</div>
 			</div>
 		</section>
+
+<!--============================================================================================================-->
+
 		<section class="column_1 ms">
 			<div class="text_only">
 				<div>
@@ -1093,6 +1261,9 @@
 				</div>
 			</div>
 		</section>
+
+<!--============================================================================================================-->
+
 		<section class="column_2 text_img ms">
 
 			<div class="text_box">
@@ -1108,6 +1279,9 @@
 			</div>
 			</div>
 		</section>
+
+<!--============================================================================================================-->
+
 		<section class="column_2 img_text ms">
 
 			<div class="text_box">
@@ -1123,6 +1297,9 @@
 			</div>
 			</div>
 		</section>
+
+<!--============================================================================================================-->
+
 		<section class="column_2 img_text ms">
 
 			<div class="text_box">
@@ -1140,7 +1317,10 @@
 			</div>
 		</section>
 
-		</div>
+<!--============================================================================================================-->
+
+
+	</div><!-- .main -->
 
 
 
